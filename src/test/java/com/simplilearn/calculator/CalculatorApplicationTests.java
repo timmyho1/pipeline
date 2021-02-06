@@ -1,13 +1,16 @@
 package com.simplilearn.calculator;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class CalculatorApplicationTests {
+private CalculatorApplication analyser = new CalculatorApplication();
 
 	@Test
-	void contextLoads() {
-	}
-
+public void testWordCount() {     	 
+   	 assertEquals(7,analyser.getWordCount("Train to win in the digital economy"));	 
+    }
+`````:
 }
